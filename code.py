@@ -18,7 +18,7 @@ for entryNum in entryNums:
     original_size = driver.get_window_size()
     print("ori_size=> ",original_size)
     ele=driver.find_element("xpath", '/html/body/div[1]')
-    total_height = original_size["height"]
+    total_height = ele.size["height"]
     print(total_height)
     driver.set_window_size(1550, total_height) 
     driver.refresh()
