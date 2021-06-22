@@ -20,13 +20,13 @@ for entryNum in entryNums:
     ele=driver.find_element("xpath", '/html/body/div[1]')
     total_height = ele.size["height"]
     print(total_height)
-    driver.set_window_size(1550, total_height) 
+    driver.set_window_size(750, total_height) 
     driver.refresh()
     ele=driver.find_element("xpath", '/html/body/div[1]')
     total_height = ele.size["height"]
     print(total_height)
    
-    driver.set_window_size(1550, total_height) 
+    driver.set_window_size(750, total_height) 
     # driver.refresh()
     
     # print(ele.size["height"])
